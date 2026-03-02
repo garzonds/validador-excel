@@ -8,7 +8,7 @@ from modules.reporter  import generate_report
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 16 * 1024 * 1024
-app.secret_key = os.environ.get("SECRET_KEY", "cambia-esta-clave-secreta-123")
+app.secret_key = os.environ.get("SECRET_KEY", "1234asdf")
 
 BASE       = Path(__file__).parent
 UPLOAD_DIR = BASE / "uploads"
@@ -18,7 +18,7 @@ RULES_PATH = BASE / "config" / "rules.json"
 UPLOAD_DIR.mkdir(exist_ok=True)
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-APP_PASSWORD = os.environ.get("APP_PASSWORD", "admin123")
+APP_PASSWORD = os.environ.get("APP_PASSWORD","123")
 
 
 def autenticado():
