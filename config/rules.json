@@ -1,0 +1,14 @@
+{
+  "output_column": "Clasificacion",
+  "rules": [
+    {
+      "conditions": [
+        {"column": "Nombre", "operator": "==", "value": "David"},
+        {"column": "Edad",   "operator": "==", "value": 22}
+      ],
+      "logic": "AND",
+      "result": "Joven"
+    }
+  ],
+  "default_result": "No Joven"
+}
